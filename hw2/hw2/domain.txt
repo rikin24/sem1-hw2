@@ -1,0 +1,23 @@
+My domain includes customers, the movies they watch, the room in which they watch the movies, and staff for each room.
+
+A customer has a name (e.g. John Smith), ticket ID (e.g. 428) and room number (e.g. 3).
+
+ - Customers can watch many movies and each movie can be seen by many customers. When a customer is deleted, the record of the movies they watched is also deleted.
+
+ - Customers can only be in one room, but each room can have many customers (bidirectional). When a customer is deleted, the record of the room they were in is only deleted if it is no longer connected to any other customer.
+
+Movies have a specific viewing time.
+
+ - Movies can be watched by many customers. Customers can watch multiple movies.
+
+ - Movies can each be shown in one room only, but each room can show many movies throughout the day (bidirectional).
+
+Rooms each have a number and are used to show multiple movies at different viewing times.
+
+ - Rooms can each have many customers, but each customer can only be in one room.
+
+ - Rooms can show many movies, but each movie can only be shown in one room.
+
+Staff are each assigned one room to be in charge of.
+
+ - Each room can only have one staff member, and each staff member is only assigned one room.
